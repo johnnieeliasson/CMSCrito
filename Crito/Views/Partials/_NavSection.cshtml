@@ -16,8 +16,6 @@
 
 }
 
-
-
 <!--nav-section-->
 <section class="nav-section">
     <div class="container">
@@ -44,8 +42,7 @@
                         {
                             @foreach (var item in selection)
                             {
-                                <a class="@(item.IsAncestorOrSelf(Model) ? "active": null)" href="@item.Url(PublishedUrlProvider)">@site.Name</a>
-                              
+                                <a class="@(item.IsAncestorOrSelf(Model)?"active":null)" href="@item.Url(PublishedUrlProvider)">@item.Name</a>
                             }
                         }
                         
